@@ -1,5 +1,8 @@
 # Notas de Markov 
 
+## Autor
+Alan Antonio Ruelas Robles
+
 ## Midi to matrix
 Este programa procesa archivos MIDI para generar una matriz de transición que muestra la probabilidad de que una nota musical sea seguida por otra. La matriz se enfoca en las notas básicas (DO, RE, MI, FA, SOL, LA, SI) en la octava 4, permitiendo analizar patrones melódicos en piezas musicales.
 
