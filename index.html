@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Melodías con Cadenas de Markov</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/midi-parser-js@4.0.4/build/midi-parser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Melodías con Cadenas de Markov</h1>
+        
+        <div class="controls">
+            <div class="melody-selector">
+                <label for="melodySelect">Seleccionar melodía:</label>
+                <select id="melodySelect">
+                    <option value="">Seleccione una melodía...</option>
+                </select>
+            </div>
+            
+            <div class="playback-controls">
+                <label for="noteCount">Número de notas:</label>
+                <input type="number" id="noteCount" value="10" min="1" max="100">
+                <button id="playButton">Reproducir</button>
+                <button id="stopButton">Detener</button>
+            </div>
+        </div>
+        
+        <div class="current-note">
+            <p id="currentNote">Nota actual: -</p>
+        </div>
+        
+        <div class="matrix-container">
+            <h2>Matriz de Transiciones</h2>
+            <div id="transitionMatrix"></div>
+        </div>
+        
+        <div class="history-container">
+            <h2>Historial de Notas</h2>
+            <div id="noteHistory"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 
